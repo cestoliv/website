@@ -1,0 +1,20 @@
+[Unit]
+Description=cestoliv.com
+
+[Service]
+WorkingDirectory=/home/cestoliv/PROD/CESTOLIV/web/
+ExecStart=/usr/bin/node server.js
+
+Restart=always
+
+RestartSec=10
+
+StandardOutput=syslog
+StandardError=syslog
+
+SyslogIdentifier=cestoliv
+
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

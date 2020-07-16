@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS-CESTOLIV</title>
+
+    <%- include head.ejs %>
+
+    <script src="/files/js/vue.js"></script>
+
+    <link rel="stylesheet" href="/files/css/menu.css">
+    <link rel="stylesheet" href="/files/css/index.css">
+</head>
+<body>
+    <div id="os">
+        <%- include menu.ejs %>
+        <div id="os-console">
+            <ul id="os-console-out" @click="focus_entry">
+                <li v-for="output in commands_output">
+                    <p v-html="output.text" :class="output.class"></p>
+                </li>
+            </ul>
+
+            <textarea id="os-console-in" v-on:keyup="check_prefix" v-on:keyup.enter="treat_command" v-model="command" v-focus></textarea>
+        </div>
+
+        <div id="bottom"></div>
+    </div>
+
+    <script src="/files/js/index.js"></script>
+</body>
+</html>

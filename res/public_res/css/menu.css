@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'fixedsys';
+    font-weight: normal;
+    /*src: url(/files/font/cicons.eot);*/ /* Compatibilité IE9 */
+            /* Compatibilité IE6-IE8 */
+    src:    url(/files/font/fixedsys.ttf)  format('truetype'); 
+            /*url(/files/font/cicons.eot) format('embedded-opentype'), */
+            /* woff2 pour les navigateurs les plus récents */
+            /* url(/files/font/fontello.woff2) format('woff2'),  */
+            /* woff pour les navigateurs récents */
+            /*url(/files/font/cicons.woff) format('woff'), */
+            /* Safari, Android, iOS */
+            
+            /* Legacy iOS */
+            /*url(/files/font/cicons.svg) format('svg'); */
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: "fixedsys";
+    background: #1a1a1a;
+}
+
+#os {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#os-bar {
+    position: relative;
+    background: #5456fb;
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;
+    font-family: "fixedsys";
+}
+
+#os-bar div {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#os-bar div p {
+    margin: 0;
+    font-size: 1.7em;
+    background: #000;
+    color: #fff;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#os-menu {
+    background: #f7f958;
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;
+    border-top: none;
+    font-family: "fixedsys";
+}
+
+#os-menu a {
+    padding-left: 8px;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1em;
+    display: inline-block;
+}
+
+#bottom {
+    height: 50px;
+    background: #1a1a1a;
+}
