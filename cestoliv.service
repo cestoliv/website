@@ -2,8 +2,8 @@
 Description=cestoliv.com
 
 [Service]
-WorkingDirectory=/home/cestoliv/PROD/CESTOLIV/web/
-ExecStart=/usr/bin/node server.js
+WorkingDirectory=
+ExecStart=deno run --allow-net --allow-env --allow-read --unstable ./server.ts
 
 Restart=always
 
@@ -14,7 +14,7 @@ StandardError=syslog
 
 SyslogIdentifier=cestoliv
 
-Environment=NODE_ENV=production
+Environment=ENVIRONMENT=prod
 
 [Install]
 WantedBy=multi-user.target

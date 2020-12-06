@@ -1,0 +1,222 @@
+.webash_terminal {
+    background: #1B2224;
+    font-family: 'FreeMono';
+    padding: 10px;
+    height: 300px;
+    overflow: auto;
+}
+
+.webash_terminal::-webkit-scrollbar {
+    width: .5em;
+}
+ 
+.webash_terminal::-webkit-scrollbar-track {
+    background: transparent;
+}
+ 
+.webash_terminal::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+.webash_input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+    outline: none;
+    background: transparent;
+    border: none;
+    font-family: 'FreeMono';
+    font-size: 1rem;
+    color: #fff;
+    overflow: hidden;
+    resize: none;
+}
+
+.webash_answers {
+    color: #fff;
+    word-break: break-all;
+}
+
+.webash_answers > p {
+    white-space: pre-line;
+    margin: 0;
+}
+.webash_answers pre {
+    margin: 0;
+}
+.webash_answers a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*///////////////////////////////////////TEXT FORMATING*/
+.webash_answers i {
+    text-decoration: none;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.webash_answers .blink {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.webash_answers .bold {
+    font-weight: bold;
+}
+
+.webash_answers .dim {
+    font-weight: lighter;
+}
+
+.webash_answers .italic {
+    font-style: italic;
+}
+
+.webash_answers .underlined {
+    text-decoration: underline;
+}
+
+.webash_answers .strikethrough {
+    text-decoration: line-through;
+}
+
+/*///////////////////////////FOREGROUND*/
+
+.webash_answers .whiteFg {
+    color: #ffff;
+}
+
+.webash_answers .lightCyanFg {
+    color: #91ffff;
+}
+
+.webash_answers .lightMagentaFg {
+    color: #ff7dff;
+}
+
+.webash_answers .lightBlueFg {
+    color: #6eadff;
+}
+
+.webash_answers .lightYellowFg {
+    color: #ffff66;
+}
+
+.webash_answers .lightGreenFg {
+    color: #78ff78;
+}
+
+.webash_answers .lightRedFg {
+    color: #ff4f4f;
+}
+
+.webash_answers .darkGrayFg {
+    color: #808080;
+}
+
+.webash_answers .lightGrayFg {
+    color: #f1f1f1;
+}
+
+.webash_answers .cyanFg {
+    color: #00ffff;
+}
+
+.webash_answers .magentaFg {
+    color: #ff00ff;
+}
+
+.webash_answers .blueFg {
+    color: #0000ff;
+}
+
+.webash_answers .yellowFg {
+    color: #ffff00;
+}
+
+.webash_answers .greenFg {
+    color: #00ff00;
+}
+
+.webash_answers .redFg {
+    color: #ff0000;
+}
+
+.webash_answers .blackFg {
+    color: #000000;
+}
+
+/*///////////////////////////////BACKGROUND*/
+
+.webash_answers .whiteBg {
+    background: #ffff;
+}
+
+.webash_answers .lightCyanBg {
+    background: #91ffff;
+}
+
+.webash_answers .lightMagentaBg {
+    background: #ff7dff;
+}
+
+.webash_answers .lightBlueBg {
+    background: #6eadff;
+}
+
+.webash_answers .lightYellowBg {
+    background: #ffff66;
+}
+
+.webash_answers .lightGreenBg {
+    background: #78ff78;
+}
+
+.webash_answers .lightRedBg {
+    background: #ff4f4f;
+}
+
+.webash_answers .darkGrayBg {
+    background: #808080;
+}
+
+.webash_answers .lightGrayBg {
+    background: #f1f1f1;
+}
+
+.webash_answers .cyanBg {
+    background: #00ffff;
+}
+
+.webash_answers .magentaBg {
+    background: #ff00ff;
+}
+
+.webash_answers .blueBg {
+    background: #0000ff;
+}
+
+.webash_answers .yellowBg {
+    background: #ffff00;
+}
+
+.webash_answers .greenBg {
+    background: #00ff00;
+}
+
+.webash_answers .redBg {
+    background: #ff0000;
+}
+
+.webash_answers .blackBg {
+    background: #000000;
+}

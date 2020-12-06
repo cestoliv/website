@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+    <title>CESTOLIV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/webash.css">
+    <link rel="stylesheet" href="/css/moon.css">
+    <link rel="stylesheet" href="/css/sun.css">
+</head>
+<body>
+    <input type="checkbox" id="toggle-color-scheme" aria-label="Toggle theme">
+    <label for="toggle-color-scheme">
+        <div class="bg">
+            <i class="moon" id="toggle-color-scheme-icon"></i>
+        </div>
+    </label>
+
+    <div id="top_banner"></div>
+
+    <div class="with_margin">
+        <div id="social_banner">
+            <a href="https://github.com/cestoliv"><img src="/imgs/github_icon.svg" alt="GitHub" /></a>
+            <a href="https://twitter.com/cestoliv"><img src="/imgs/twitter_icon.svg" alt="Twitter" /></a>
+            <a href="mailto:me@cestoliv.com"><img src="/imgs/mail_icon.svg" alt="Mail" /></a>
+        </div>
+
+        <h2>Coucou World!</h2>
+
+        <h3>CONTENU</h3>
+        <ul class="icon-text-list">
+            <li><a href="https://chevro.fr/podcasts/danslasauce"><img src="/imgs/danslasauce_icon.svg" alt="Dans la Sauce" /><p>Podcast <b>Dans la Sauce</b> : Trois potes qui parlent de sport.</p></a></li>
+        </ul>
+
+        <h3>PROJETS</h3>
+        <ul class="icon-text-list">
+            <li><a href="https://chevro.fr/"><img src="/imgs/chevro_icon.svg" alt="CHEVRO" /><p><b>CHEVRO.fr</b> : pour aider les créateurs</p></a></li>
+        </ul>
+
+        <h2>btw, I use WeBash</h2>
+
+        <%~ includeFile("webash.html", it) %>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="/js/color-scheme.js"></script>
+
+    <script src="<%= it.webash_url %>/socket.io/socket.io.js"></script>
+    <script src="/js/webash.js"></script>
+</body>
+</html>

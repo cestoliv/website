@@ -1,0 +1,16 @@
+@font-face {
+    font-family: FreeMono;
+    src: url('/fonts/FreeMono/FreeMono.eot');
+    src: url('/fonts/FreeMono/FreeMono?#iefix') format('embedded-opentype'),
+        url('/fonts/FreeMono/FreeMono.woff2') format('woff2'), 
+        url('/fonts/FreeMono/FreeMono.woff') format('woff'),
+        url('/fonts/FreeMono/FreeMono.ttf') format('truetype');
+}
+@font-face {
+    font-family: BIOWEAPON;
+    src: url('/fonts/BIOWEAPON/BIOWEAPON.eot');
+    src: url('/fonts/BIOWEAPON/BIOWEAPON?#iefix') format('embedded-opentype'),
+        url('/fonts/BIOWEAPON/BIOWEAPON.woff2') format('woff2'), 
+        url('/fonts/BIOWEAPON/BIOWEAPON.woff') format('woff'),
+        url('/fonts/BIOWEAPON/BIOWEAPON.ttf') format('truetype');
+}
